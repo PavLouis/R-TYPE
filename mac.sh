@@ -1,0 +1,3 @@
+g++ ECS/src/ECS/Loader.cpp -I/opt/homebrew/Cellar/sfml/2.5.1_1/include -L/opt/homebrew/Cellar/sfml/2.5.1_1/lib -lsfml-window -lsfml-system -lsfml-graphics -lsfml-network -o main.out -std=c++2a -I./include -I./ECS/include/ECS -I./ECS/include/ECS/Architecture -I./ECS/include/ECS/Component ECS/src/ECS/Components/*.cpp ECS/src/ECS/Systems/*.cpp ECS/src/*.cpp -I./client/include client/src/*cpp -I./Server/include Server/src/*cpp
+./main.out 30002
+rm main.out
